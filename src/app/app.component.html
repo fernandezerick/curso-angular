@@ -1,2 +1,6 @@
-<!-- <router-outlet></router-outlet> -->
-<h1>HOLA MUNDO</h1>
+<app-header></app-header>
+<app-slidebar></app-slidebar>
+
+<div class="grid">
+  <app-card *ngFor="let card of ArregloTarjetas" [dataEntrante]="card"></app-card>
+</div>
